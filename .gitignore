@@ -1,0 +1,26 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Environments & Secrets
+.env
+.env.local
+*.env
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Data & outputs
+data/raw/
+data/classified/
+outputs/
