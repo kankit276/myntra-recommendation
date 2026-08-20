@@ -8,3 +8,10 @@ google-generativeai
 
 streamlit
 plotly
+
+app-store-scraper
+feedparser
+thefuzz
+python-Levenshtein
+aiohttp
+beautifulsoup4

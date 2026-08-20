@@ -39,3 +39,33 @@ class GeminiClient:
             return result["candidates"][0]["content"]["parts"][0]["text"]
         except (KeyError, IndexError) as e:
             raise Exception(f"Unexpected API response format: {result}")
+
+    async def generate_json_async(self, session, system_prompt, user_prompt):
+        import asyncio
+        full_prompt = f"{system_prompt}\n\n{user_prompt}"
+        
+        payload = {
+            "contents": [{
+                "parts": [{"text": full_prompt}]
+            }],
+            "generationConfig": {
+                "temperature": 0.0,
+                "responseMimeType": "application/json"
+            }
+        }
+        
+        headers = {'Content-Type': 'application/json'}
+        
+        for attempt in range(3):
+            try:
+                async with session.post(self.url, headers=headers, json=payload, timeout=30) as response:
+                    if response.status != 200:
+                        text = await response.text()
+                        raise Exception(f"API Error {response.status}: {text}")
+                        
+                    result = await response.json()
+                    return result["candidates"][0]["content"]["parts"][0]["text"]
+            except Exception as e:
+                if attempt == 2:
+                    raise
+                await asyncio.sleep(2 ** attempt)
