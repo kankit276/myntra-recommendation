@@ -59,6 +59,7 @@
 - **Data Acquisition**:
   - Replaced the PRAW Reddit scraper with an unauthenticated RSS scraper (`scripts/scrape_reddit.py`) using `feedparser`, entirely bypassing the Reddit API key requirement.
   - Added an iOS App Store scraper (`scripts/scrape_app_store.py`) using `app-store-scraper` to pull iPhone reviews.
+  - Added a YouTube scraper (`scripts/scrape_youtube.py`) to extract comments from Myntra clothing haul videos using the YouTube Data v3 API.
 - **Processing**:
   - Integrated `thefuzz` library into `scripts/clean_data.py` to add fuzzy deduplication, filtering out similar spam reviews rather than just exact matches.
 - **Classification Engine**:
