@@ -9,10 +9,16 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config.settings import settings
 from config.prompts import build_system_prompt, build_user_prompt
 from models.schemas import ClassifiedReview
-from utils.llm_client import GeminiClient
+from utils.llm_client import XAIClient
 
 async def process_row(session, client, idx, row, system_prompt):
-    user_prompt = build_user_prompt(row.to_dict())
+    user_prompt = build_user_prompt(
+        review_text=row['review_text'],
+        platform=row['source_platform'],
+        source_url=row['source_url'],
+        date=row['date'],
+        rating=row.get('rating')
+    )
     print(f"Classifying row {idx}...")
     try:
         json_output = await client.generate_json_async(session, system_prompt, user_prompt)
@@ -32,7 +38,7 @@ async def main_async():
         return
         
     try:
-        client = GeminiClient()
+        client = XAIClient()
     except ValueError as e:
         print(e)
         print("Please check your .env file or configuration.")

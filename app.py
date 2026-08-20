@@ -10,7 +10,6 @@ from config.settings import settings
 
 st.set_page_config(page_title="Myntra Discovery Engine", page_icon="🛍️", layout="wide")
 
-@st.cache_data
 def load_data():
     opp_path = settings.OPPORTUNITIES_PATH
     class_path = settings.CLASSIFIED_DATA_PATH

@@ -69,3 +69,43 @@ class GeminiClient:
                 if attempt == 2:
                     raise
                 await asyncio.sleep(2 ** attempt)
+
+class XAIClient:
+    def __init__(self):
+        from dotenv import load_dotenv
+        load_dotenv()
+        self.api_key = os.getenv("XAI_API_KEY")
+        if not self.api_key:
+            raise ValueError("XAI_API_KEY not found in environment.")
+        self.url = "https://api.x.ai/v1/chat/completions"
+
+    async def generate_json_async(self, session, system_prompt, user_prompt):
+        import asyncio
+        payload = {
+            "model": "grok-4.6",
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ],
+            "temperature": 0.0,
+            "response_format": {"type": "json_object"}
+        }
+        
+        headers = {
+            'Content-Type': 'application/json',
+            'Authorization': f'Bearer {self.api_key}'
+        }
+        
+        for attempt in range(3):
+            try:
+                async with session.post(self.url, headers=headers, json=payload, timeout=30) as response:
+                    if response.status != 200:
+                        text = await response.text()
+                        raise Exception(f"API Error {response.status}: {text}")
+                        
+                    result = await response.json()
+                    return result["choices"][0]["message"]["content"]
+            except Exception as e:
+                if attempt == 2:
+                    raise
+                await asyncio.sleep(2 ** attempt)
