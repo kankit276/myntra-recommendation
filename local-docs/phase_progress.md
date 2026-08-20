@@ -54,3 +54,12 @@
   - Developed the Executive Summary dashboard with key hero stats and Top Barrier metrics.
   - Implemented the "Ranked Opportunity Areas" expanders that show component scores and verbatim evidence quotes.
   - Added a Plotly Treemap for visual "Barrier Analysis".
+
+## Post-Phase 6 Enhancements (TODOs Executed)
+- **Data Acquisition**:
+  - Replaced the PRAW Reddit scraper with an unauthenticated RSS scraper (`scripts/scrape_reddit.py`) using `feedparser`, entirely bypassing the Reddit API key requirement.
+  - Added an iOS App Store scraper (`scripts/scrape_app_store.py`) using `app-store-scraper` to pull iPhone reviews.
+- **Processing**:
+  - Integrated `thefuzz` library into `scripts/clean_data.py` to add fuzzy deduplication, filtering out similar spam reviews rather than just exact matches.
+- **Classification Engine**:
+  - Upgraded the `GeminiClient` in `utils/llm_client.py` and the main loop in `scripts/classify.py` to use asynchronous HTTP requests (`aiohttp` and `asyncio`). This processes reviews in concurrent batches, drastically reducing execution time.
