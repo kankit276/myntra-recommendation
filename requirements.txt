@@ -4,3 +4,4 @@ pandas
 google-play-scraper
 praw
 pytest
+google-generativeai
