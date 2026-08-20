@@ -1,0 +1,422 @@
+[
+  {
+    "name": "Decision Overload",
+    "barrier_id": "decision_overload",
+    "score": 17,
+    "components": {
+      "frequency": 3,
+      "severity": 4,
+      "closeness": 3,
+      "segment_clarity": 3,
+      "non_discount_solvability": 5
+    },
+    "matching_count": 13,
+    "percentage": 11.6,
+    "top_segment": "first-time buyer",
+    "missing_info": [
+      "use_case_styling",
+      "visual_accuracy",
+      "material_feel"
+    ],
+    "evidence": [
+      {
+        "quote": "app is good with good rates but the platform fees ...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=4eccf293-a114-404c-9167-b939a60f50bb"
+      },
+      {
+        "quote": "\u200b\"Extremely disappointed with Myntra's terrible se...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=1cc42b94-d16d-43cf-a9e4-219fe7e4eb22"
+      },
+      {
+        "quote": "Good quality products",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=0ce25428-3562-4715-9919-7d913577a2a7"
+      },
+      {
+        "quote": "my experience with myntra is mind blowing very nic...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=1d74481f-f49a-4fdd-b9c3-031b756aa906"
+      },
+      {
+        "quote": "I thought in myntra we get only expensive products...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=755d367e-df31-4c45-b2a1-1cfc34a2b0e0"
+      }
+    ]
+  },
+  {
+    "name": "Delivery Return Friction",
+    "barrier_id": "delivery_return_friction",
+    "score": 17,
+    "components": {
+      "frequency": 3,
+      "severity": 4,
+      "closeness": 3,
+      "segment_clarity": 3,
+      "non_discount_solvability": 5
+    },
+    "matching_count": 15,
+    "percentage": 13.4,
+    "top_segment": "occasion shopper",
+    "missing_info": [
+      "use_case_styling",
+      "sizing_details",
+      "material_feel"
+    ],
+    "evidence": [
+      {
+        "quote": "I lovethis app sooo much gives reasonable prices i...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=dd9efba1-3987-45b9-8c00-9575a2cca41f"
+      },
+      {
+        "quote": "this app is very nice",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=b9c3036b-398c-4528-9d0f-1b2c011c7730"
+      },
+      {
+        "quote": "best shopping app",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=184268a1-b58b-4bcd-9d05-a756b1844eec"
+      },
+      {
+        "quote": "Horrible experience with the delivery, my first or...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=6a70afdd-51e6-4a5d-ab0c-62e4e35ec602"
+      },
+      {
+        "quote": "it's good for shopping \ud83d\udecd\ufe0f\ud83d\uded2 and it can be purchasea...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=7a4f87b2-291f-4c31-a8a3-2528122ce587"
+      }
+    ]
+  },
+  {
+    "name": "Fit Uncertainty",
+    "barrier_id": "fit_uncertainty",
+    "score": 12,
+    "components": {
+      "frequency": 2,
+      "severity": 4,
+      "closeness": 3,
+      "segment_clarity": 3,
+      "non_discount_solvability": 5
+    },
+    "matching_count": 7,
+    "percentage": 6.2,
+    "top_segment": "occasion shopper",
+    "missing_info": [
+      "sizing_details",
+      "material_feel",
+      "visual_accuracy"
+    ],
+    "evidence": [
+      {
+        "quote": "Unable to cancel order .....",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=5add831c-1f52-41be-a781-9d3f99a7aecf"
+      },
+      {
+        "quote": "good product \ud83d\udc4d\ud83d\ude04",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=ed73c16a-6e76-47a7-831a-3ebaa7b31054"
+      },
+      {
+        "quote": "A very beautiful dress, perfect stich.But the only...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=5f0627c3-bd29-452f-99da-d7663451167d"
+      },
+      {
+        "quote": "fast delivari and good produced",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=b31dcb8b-5140-437a-a656-c7b92352b57c"
+      },
+      {
+        "quote": "absolutely 100% original quality",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=18685182-1bf4-41d4-b726-08f790fa253a"
+      }
+    ]
+  },
+  {
+    "name": "Trust Issues",
+    "barrier_id": "trust_issues",
+    "score": 12,
+    "components": {
+      "frequency": 3,
+      "severity": 4,
+      "closeness": 2,
+      "segment_clarity": 3,
+      "non_discount_solvability": 5
+    },
+    "matching_count": 13,
+    "percentage": 11.6,
+    "top_segment": "occasion shopper",
+    "missing_info": [
+      "sizing_details",
+      "material_feel",
+      "use_case_styling"
+    ],
+    "evidence": [
+      {
+        "quote": "i loved it",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=0c7bbfb5-4ea6-43e2-816e-4911c1105c77"
+      },
+      {
+        "quote": "value for money products.",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=ce28305b-45b7-44e5-b015-02e80a57ada8"
+      },
+      {
+        "quote": "It's a good app, good clothes in good prize.",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=69e1552a-85aa-4164-964d-6a940b555dbd"
+      },
+      {
+        "quote": "it's a pleasure to use\ud83d\ude0d",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=b56d6678-c1d5-417c-8a0d-1e75dea5c30d"
+      },
+      {
+        "quote": "very nice service and product",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=1a51f4c9-ba74-4e7b-acd5-604cc9415f51"
+      }
+    ]
+  },
+  {
+    "name": "Occasion Mismatch",
+    "barrier_id": "occasion_mismatch",
+    "score": 12,
+    "components": {
+      "frequency": 3,
+      "severity": 4,
+      "closeness": 2,
+      "segment_clarity": 3,
+      "non_discount_solvability": 5
+    },
+    "matching_count": 14,
+    "percentage": 12.5,
+    "top_segment": "trend-led shopper",
+    "missing_info": [
+      "use_case_styling",
+      "sizing_details",
+      "visual_accuracy"
+    ],
+    "evidence": [
+      {
+        "quote": "the delivery system is very amazing as ingot the e...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=9a62baca-4616-4db1-8dcb-7633a709ec11"
+      },
+      {
+        "quote": "This app makes shopping so easy and joyful \ud83e\udef6\ud83c\udffb",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=88dce93c-ce33-4258-9ee0-1a2562b654b7"
+      },
+      {
+        "quote": "khup sundar aap aahe khup swst n best mal aahe pls...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=71214de4-8745-4906-8787-134a6f4b1570"
+      },
+      {
+        "quote": "\u201cAbsolutely loved these jeans! The fitting is perf...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e4bc67c3-8184-4188-95d1-c6f90779024f"
+      },
+      {
+        "quote": "very nice \ud83d\udcaf and genuine",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=0616ad44-f124-45c5-9b81-d78f0f81046d"
+      }
+    ]
+  },
+  {
+    "name": "Stock Availability",
+    "barrier_id": "stock_availability",
+    "score": 12,
+    "components": {
+      "frequency": 2,
+      "severity": 4,
+      "closeness": 3,
+      "segment_clarity": 3,
+      "non_discount_solvability": 5
+    },
+    "matching_count": 6,
+    "percentage": 5.4,
+    "top_segment": "occasion shopper",
+    "missing_info": [
+      "alternative_comparison",
+      "sizing_details",
+      "social_proof"
+    ],
+    "evidence": [
+      {
+        "quote": "extremely poor grievance redressal mechanism there...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=2683e562-bec5-4dad-94ab-e9308f511862"
+      },
+      {
+        "quote": "mast hai sasta hai",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=0a99d124-0138-4f07-8b46-42aafac1efcd"
+      },
+      {
+        "quote": "very useful and time saving app...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=43ef69b5-5eb2-415b-90e2-eaa7249ea2ae"
+      },
+      {
+        "quote": "best shopping app... i am really happy",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=5cae7981-3861-4668-bb8a-001f175c29af"
+      },
+      {
+        "quote": "don't deliver on the said date delivery is always ...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=7c84660d-f780-4ec0-9d14-4b87c640467e"
+      }
+    ]
+  },
+  {
+    "name": "Social Validation",
+    "barrier_id": "social_validation",
+    "score": 8,
+    "components": {
+      "frequency": 2,
+      "severity": 4,
+      "closeness": 2,
+      "segment_clarity": 3,
+      "non_discount_solvability": 5
+    },
+    "matching_count": 9,
+    "percentage": 8.0,
+    "top_segment": "trend-led shopper",
+    "missing_info": [
+      "material_feel",
+      "sizing_details",
+      "social_proof"
+    ],
+    "evidence": [
+      {
+        "quote": "very nice and perfect size with comfortable...so b...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=7b504317-baff-406b-aa5f-798ef43096fa"
+      },
+      {
+        "quote": "Myntra ek number ka ghatiya aur froad banane ke li...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=49ed4ed0-5e95-48b0-bc25-75348c460b6d"
+      },
+      {
+        "quote": "Very disappointed.Myntra deactivated my account wi...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=ab6dcd58-dd3f-4880-9345-6df5fc03e5b3"
+      },
+      {
+        "quote": "Best for online shopping \ud83d\udecd \ud83d\ude0c Using this app for mo...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=a8f6075c-3fd5-4e85-a4b7-c5be00586945"
+      },
+      {
+        "quote": "very good quality products",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=263af95c-0e0c-4c04-b025-afb49be6205d"
+      }
+    ]
+  },
+  {
+    "name": "Styling Uncertainty",
+    "barrier_id": "styling_uncertainty",
+    "score": 8,
+    "components": {
+      "frequency": 2,
+      "severity": 4,
+      "closeness": 2,
+      "segment_clarity": 3,
+      "non_discount_solvability": 5
+    },
+    "matching_count": 11,
+    "percentage": 9.8,
+    "top_segment": "budget-conscious college student",
+    "missing_info": [
+      "sizing_details",
+      "alternative_comparison",
+      "material_feel"
+    ],
+    "evidence": [
+      {
+        "quote": "i have purchase many products on this app all prod...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=59629c47-04f5-4467-b472-603957a1e8d0"
+      },
+      {
+        "quote": "very bad Myntra bhai likha kar bata raha hu ki 100...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=44fc2703-dee2-48f9-b6b8-c141f04a6228"
+      },
+      {
+        "quote": "Your filter is not working in the mobile App. Once...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=d23130cc-5c33-4046-9aea-5980defbbb17"
+      },
+      {
+        "quote": "very nice app",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=0e51a138-5622-4e14-83ff-623e5f662902"
+      },
+      {
+        "quote": "It is a very good app",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e8603189-e113-45ce-aacd-149c39477be6"
+      }
+    ]
+  },
+  {
+    "name": "Quality Uncertainty",
+    "barrier_id": "quality_uncertainty",
+    "score": 6,
+    "components": {
+      "frequency": 1,
+      "severity": 4,
+      "closeness": 3,
+      "segment_clarity": 3,
+      "non_discount_solvability": 5
+    },
+    "matching_count": 5,
+    "percentage": 4.5,
+    "top_segment": "first-time buyer",
+    "missing_info": [
+      "social_proof",
+      "alternative_comparison",
+      "material_feel"
+    ],
+    "evidence": [
+      {
+        "quote": "myntra is fraud now a days they are not refunding ...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=89f1ab8f-a181-4893-9184-3258805ed880"
+      },
+      {
+        "quote": "good product as soon as received \ud83d\udc4f\ud83d\udc4c",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=2364ea40-6f8c-4e4a-8f09-ab1bbad30256"
+      },
+      {
+        "quote": "customer friendly app too good",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=4c0ff5bb-8feb-4ab5-9c07-e8b75b997370"
+      },
+      {
+        "quote": "Good, but not budget friendly for everyone!",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=8e507734-7f37-499d-84c6-bd2065015978"
+      },
+      {
+        "quote": "Best quality of product",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=12a8be28-417f-45a9-b2f2-b759e364ae6c"
+      }
+    ]
+  },
+  {
+    "name": "Price Concern",
+    "barrier_id": "price_concern",
+    "score": 3,
+    "components": {
+      "frequency": 2,
+      "severity": 4,
+      "closeness": 2,
+      "segment_clarity": 3,
+      "non_discount_solvability": 2
+    },
+    "matching_count": 6,
+    "percentage": 5.4,
+    "top_segment": "trend-led shopper",
+    "missing_info": [
+      "material_feel",
+      "sizing_details",
+      "alternative_comparison"
+    ],
+    "evidence": [
+      {
+        "quote": "I just love this app the fast delivery ooh la laaa...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=d48efece-36b3-4aa5-b844-3df064fe93d7"
+      },
+      {
+        "quote": "I just love love love myntra",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=ddd4ebe1-9f84-4e67-b0e2-c72337cb312b"
+      },
+      {
+        "quote": "excellent products and original brands",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=fd4b865b-09de-4f33-91cf-6f1caf493766"
+      },
+      {
+        "quote": "very good aap",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=cad62812-e514-46bb-b0ca-4c586987ea94"
+      },
+      {
+        "quote": "i trusted on myntra last five years... original pr...",
+        "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=a9edcf07-5b98-4da1-84da-ee507974ddbb"
+      }
+    ]
+  }
+]

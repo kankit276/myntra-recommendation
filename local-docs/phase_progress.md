@@ -37,3 +37,11 @@
   - Created `utils/retry.py` for exponential backoff on API failures.
   - Built `utils/llm_client.py` configured for Google's `gemini-1.5-flash` model via `google-generativeai`.
   - Wrote `scripts/classify.py` to loop through the tagged reviews, query the LLM, validate output using Pydantic, and checkpoint every 25 rows to `data/classified.json`.
+
+## Phase 5: Output and experience (Analytics)
+- **Objective**: Aggregate the LLM classifications and generate ranked opportunities.
+- **What was done**:
+  - Created `scripts/aggregate.py` to calculate opportunity scores based on the 5-factor model (Frequency, Severity, Closeness, Segment Clarity, Non-discount Solvability).
+  - Built mapping logic for frequencies and decision stages to numeric scores (1-5).
+  - Exported the final ranked JSON to `data/opportunities.json` for the frontend.
+  - (Note: Added `mock_classify.py` fallback to unblock development when preview API models lacked text generation support).
