@@ -1,0 +1,51 @@
+{
+  "save_reason": [
+    "aspiration",
+    "event_planning",
+    "comparison",
+    "price_watch",
+    "availability_watch",
+    "bookmark",
+    "gift_consideration",
+    "not_applicable"
+  ],
+  "purchase_barriers": [
+    "fit_uncertainty",
+    "quality_uncertainty",
+    "price_concern",
+    "trust_issues",
+    "decision_overload",
+    "delivery_return_friction",
+    "styling_uncertainty",
+    "stock_availability",
+    "social_validation",
+    "occasion_mismatch",
+    "not_applicable"
+  ],
+  "missing_information": [
+    "sizing_details",
+    "material_feel",
+    "visual_accuracy",
+    "use_case_styling",
+    "social_proof",
+    "alternative_comparison",
+    "not_applicable"
+  ],
+  "decision_stage": [
+    "browsing",
+    "saving",
+    "evaluating",
+    "ready_to_buy",
+    "abandoned",
+    "not_applicable"
+  ],
+  "external_behaviour": [
+    "youtube_search",
+    "social_media",
+    "friends_family",
+    "competitor_comparison",
+    "offline_trial",
+    "google_search",
+    "not_applicable"
+  ]
+}
