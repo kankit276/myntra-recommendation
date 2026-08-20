@@ -5,3 +5,6 @@ google-play-scraper
 praw
 pytest
 google-generativeai
+
+streamlit
+plotly

@@ -45,3 +45,12 @@
   - Built mapping logic for frequencies and decision stages to numeric scores (1-5).
   - Exported the final ranked JSON to `data/opportunities.json` for the frontend.
   - (Note: Added `mock_classify.py` fallback to unblock development when preview API models lacked text generation support).
+
+## Phase 6: Frontend (web UI)
+- **Objective**: Build the user-facing web interface to display the AI Discovery Engine results.
+- **What was done**:
+  - Created `app.py` using Streamlit as the SPA equivalent.
+  - Built an interactive sidebar for dynamic filtering by Platform and User Segment.
+  - Developed the Executive Summary dashboard with key hero stats and Top Barrier metrics.
+  - Implemented the "Ranked Opportunity Areas" expanders that show component scores and verbatim evidence quotes.
+  - Added a Plotly Treemap for visual "Barrier Analysis".
