@@ -1,0 +1,6 @@
+pydantic
+python-dotenv
+pandas
+google-play-scraper
+praw
+pytest
