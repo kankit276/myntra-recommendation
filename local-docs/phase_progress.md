@@ -50,10 +50,12 @@
 - **Objective**: Build the user-facing web interface to display the AI Discovery Engine results.
 - **What was done**:
   - Created `app.py` using Streamlit as the SPA equivalent.
+  - Implemented the required 5-tab layout: Opportunity Ranking, Barrier Analysis, Metric Tree Mapping, Evidence Explorer, and Data & Methodology.
   - Built an interactive sidebar for dynamic filtering by Platform and User Segment.
   - Developed the Executive Summary dashboard with key hero stats and Top Barrier metrics.
   - Implemented the "Ranked Opportunity Areas" expanders that show component scores and verbatim evidence quotes.
   - Added a Plotly Treemap for visual "Barrier Analysis".
+  - Added a "Live Engine Demo" button to simulate AI extraction on a sample review.
 
 ## Post-Phase 6 Enhancements (TODOs Executed)
 - **Data Acquisition**:
@@ -62,5 +64,7 @@
   - Added a YouTube scraper (`scripts/scrape_youtube.py`) to extract comments from Myntra clothing haul videos using the YouTube Data v3 API.
 - **Processing**:
   - Integrated `thefuzz` library into `scripts/clean_data.py` to add fuzzy deduplication, filtering out similar spam reviews rather than just exact matches.
+  - Added `scripts/normalize_segments.py` to clean and group the free-text `user_segment_clues` into 7 distinct categorical shopper segments.
 - **Classification Engine**:
   - Upgraded the `GeminiClient` in `utils/llm_client.py` and the main loop in `scripts/classify.py` to use asynchronous HTTP requests (`aiohttp` and `asyncio`). This processes reviews in concurrent batches, drastically reducing execution time.
+  - Successfully classified 400 reviews using the LLM and exported to `classified.json`.
