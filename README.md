@@ -24,6 +24,46 @@ This project is built phase-wise:
 3. Copy `.env.example` to `.env` and fill in your chosen API keys (Groq, Gemini, or OpenAI)
 4. Execute the phases step-by-step.
 
+## How to Run the Project
+
+You can execute the pipeline step-by-step from data acquisition to the final UI.
+
+### 1. Data Collection (Scraping)
+Run any of the scrapers to pull raw reviews. The output is saved to `data/raw_reviews.csv`.
+```bash
+python scripts/scrape_google_play.py
+python scripts/scrape_app_store.py
+python scripts/scrape_youtube.py
+python scripts/scrape_reddit.py
+```
+
+### 2. Data Cleaning & Tagging
+Clean the raw data (deduplication, spam filtering) and tag implicit/explicit signals. This generates `data/tagged_reviews.csv`.
+```bash
+python scripts/clean_data.py
+python scripts/tag_signals.py
+```
+
+### 3. AI Classification
+Process the tagged reviews through the LLM to extract the 7-dimension taxonomy. The output is saved to `data/classified.json`.
+*(Ensure your API keys are set in `.env`)*
+```bash
+python scripts/classify.py
+```
+
+### 4. Aggregation & Scoring
+Aggregate the LLM output into quantified, scored opportunity areas. This generates `data/opportunities.json`.
+```bash
+python scripts/normalize_segments.py  # Optional: cleans up free-text segments
+python scripts/aggregate.py
+```
+
+### 5. Launch the Dashboard
+Run the Streamlit web app to visualize the final Discovery Engine.
+```bash
+streamlit run app.py
+```
+
 ## Supported Data Sources
 - Google Play Store
 - Apple App Store
